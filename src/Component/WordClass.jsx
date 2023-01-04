@@ -15,7 +15,7 @@ class Developer {
 const dev = new Developer("prabhu", 'bind');
 const WordClass = () => {
     return (
-        <div>
+        <div className="bg-pink-500 font-normal border-solid">
             {names.map((item) => {
                     return (<div>{dev.getName(item.firstName, item.lastName)}</div>)
                 })}
