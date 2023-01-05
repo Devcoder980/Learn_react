@@ -12,6 +12,7 @@ class Developer {
         return this.firstName + " " + this.lastName;
     }
 }
+
 const dev = new Developer("prabhu", 'bind');
 const WordClass = () => {
     return (

@@ -10,7 +10,7 @@ export const list = [
   {
     title: 'Redux',
     url: 'https://reactjs.org/',
-    author: 'Miss Shivani Looser',
+    author: 'Miss',
     num_comments: 2,
     points: 99,
     objectId: 1,

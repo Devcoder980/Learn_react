@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import Counter from './Component/Counter';
 import Hero from './Component/Hero';
 import List from './Component/List';
 import Search from './Component/Search';
@@ -24,10 +25,13 @@ const App = () => {
       <input className="rounded-b-sm" type="text" id='search' /> */}
 
       <Hero/>
+
       <List/>
       <Search/>
       <hr /><hr />
       <WordClass/>
+      <hr /><hr />
+      <Counter/>
     </div>
   )
 }
