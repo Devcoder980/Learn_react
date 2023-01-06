@@ -1,10 +1,14 @@
 import React from 'react'
 import './App.css'
-import Counter from './Component/Counter';
-import Hero from './Component/Hero';
-import List from './Component/List';
-import Search from './Component/Search';
-import WordClass from './Component/WordClass';
+import AschoransState from './Component/AschoransState';
+// import Counter from './Component/Counter';
+// import Hero from './Component/Hero';
+// import List from './Component/List';
+// import Search from './Component/Search';
+import StateManga from './Component/StateManga';
+// import WordClass from './Component/WordClass';
+
+
 
 // const title='react';
 // const welcome={
@@ -24,14 +28,16 @@ const App = () => {
       {/* <label htmlFor="search">search:</label>
       <input className="rounded-b-sm" type="text" id='search' /> */}
 
-      <Hero/>
-
+      {/* <Hero/>
       <List/>
-      <Search/>
+      <Search/> */}
       <hr /><hr />
-      <WordClass/>
+      {/* <WordClass/> */}
       <hr /><hr />
-      <Counter/>
+      {/* <Counter/> */}
+
+      <StateManga/>
+      <AschoransState/>
     </div>
   )
 }
