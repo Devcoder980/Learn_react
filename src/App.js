@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import AschoransState from './Component/AschoransState';
+import CallbackHjsx from './Component/CallbackHjsx';
 // import Counter from './Component/Counter';
 // import Hero from './Component/Hero';
 // import List from './Component/List';
@@ -38,6 +39,9 @@ const App = () => {
 
       <StateManga/>
       <AschoransState/>
+      <hr className="my-2 border-red-700 h-4 bg-red-500" />
+      <hr />
+      <CallbackHjsx/>
     </div>
   )
 }
