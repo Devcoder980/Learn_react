@@ -1,31 +1,41 @@
 import React from 'react'
 import { useState } from 'react'
 
+const handleSearch=event=>{
+    console.log(event.target.value);
+};
 
+const show=()=>{
+    console.log("hello World");
+}
 
-function CallbackHjsx() {
+function CallbackHjsx() 
+{
   return (
-    <Search/>
+    <div>
+        <h1>My Hacker Stories</h1>
+        <Search onSearch={handleSearch} onPoint={show}/>
+    </div>
   )
 }
 
-
-const Search=()=>{
+const Search=props=>{
     const [searchTerm,setSearchTerm]=useState('');
     const handleChange=event=>{
         setSearchTerm(event.target.value);
-    }
+        props.onSearch(event);
+        props.onPoint();
+    };
 
-    return(
-        <div>
-        <h1>My Hacker Stories</h1>
+   return(
+    <div>
         <label htmlFor="search">Search:</label>
-        <input type="text" className="border-2" onChange={handleChange} />
+        <input type="text" onChange={handleChange} />
         <p>
-            Searchin for <strong>{searchTerm}</strong>
+            <strong>{searchTerm}</strong>
         </p>
     </div>
-    )
+   )
 }
 
 export default CallbackHjsx
