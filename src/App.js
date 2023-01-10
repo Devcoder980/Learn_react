@@ -1,10 +1,12 @@
 import React from 'react'
 import './App.css'
+import AdvanceState from './Component/AdvanceState';
 import AschoransState from './Component/AschoransState';
 import CallbackHjsx from './Component/CallbackHjsx';
+import SearchFilter from './Component/SearchFilter.jsx';
 // import Counter from './Component/Counter';
 // import Hero from './Component/Hero';
-// import List from './Component/List';
+import List from './Component/List';
 // import Search from './Component/Search';
 import StateManga from './Component/StateManga';
 // import WordClass from './Component/WordClass';
@@ -30,7 +32,7 @@ const App = () => {
       <input className="rounded-b-sm" type="text" id='search' /> */}
 
       {/* <Hero/>
-      <List/>
+    
       <Search/> */}
       <hr /><hr />
       {/* <WordClass/> */}
@@ -42,6 +44,11 @@ const App = () => {
       <hr className="my-2 border-red-700 h-4 bg-red-500" />
       <hr />
       <CallbackHjsx/>
+      <hr />
+      <hr />
+      <AdvanceState/>
+      <SearchFilter/>
+      <List/>
     </div>
   )
 }
