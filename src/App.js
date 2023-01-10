@@ -6,7 +6,7 @@ import CallbackHjsx from './Component/CallbackHjsx';
 import SearchFilter from './Component/SearchFilter.jsx';
 // import Counter from './Component/Counter';
 // import Hero from './Component/Hero';
-import List from './Component/List';
+// import List from './Component/List';
 // import Search from './Component/Search';
 import StateManga from './Component/StateManga';
 // import WordClass from './Component/WordClass';
@@ -48,7 +48,7 @@ const App = () => {
       <hr />
       <AdvanceState/>
       <SearchFilter/>
-      <List/>
+      {/* <List/> */}
     </div>
   )
 }
