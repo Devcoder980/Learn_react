@@ -9,7 +9,9 @@
           "classic",
           "american"
         ],
-        "reactions": 3
+        "reactions": 3,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+
       },
       {
         "id": 7,
@@ -20,7 +22,8 @@
           "magical",
           "crime"
         ],
-        "reactions": 0
+        "reactions": 0,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
       },
       {
         "id": 8,
@@ -31,7 +34,8 @@
           "american",
           "english"
         ],
-        "reactions": 9
+        "reactions": 9,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
       },
       {
         "id": 9,
@@ -43,7 +47,8 @@
           "history",
           "magical"
         ],
-        "reactions": 2
+        "reactions": 2,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
       },
       {
         "id": 10,
@@ -55,7 +60,8 @@
           "magical",
           "history"
         ],
-        "reactions": 4
+        "reactions": 4,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(78).webp"
       },
       {
         "id": 11,
@@ -67,7 +73,8 @@
           "american",
           "history"
         ],
-        "reactions": 5
+        "reactions": 5,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
       },
       {
         "id": 12,
@@ -78,7 +85,8 @@
           "love",
           "english"
         ],
-        "reactions": 7
+        "reactions": 7,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
       },
       {
         "id": 13,
@@ -90,7 +98,8 @@
           "classic",
           "french"
         ],
-        "reactions": 0
+        "reactions": 0,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
       },
       {
         "id": 14,
@@ -102,7 +111,8 @@
           "english",
           "love"
         ],
-        "reactions": 0
+        "reactions": 0,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
       },
       {
         "id": 15,
@@ -114,7 +124,8 @@
           "history",
           "crime"
         ],
-        "reactions": 1
+        "reactions": 1,
+        "img":"https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp"
       }
   
   ]
