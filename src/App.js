@@ -5,6 +5,7 @@ import Header from './Component/Header';
 // import AschoransState from './Component/AschoransState';
 // import CallbackHjsx from './Component/CallbackHjsx';
 import PropsInAdvance from './Component/PropsInAdvance';
+import ReactSideEffect from './Component/ReactSideEffect';
 // import SearchFilter from './Component/SearchFilter.jsx';
 // import Counter from './Component/Counter';
 // import Hero from './Component/Hero';
@@ -52,7 +53,8 @@ const App = () => {
       // <AdvanceState/>
       // <SearchFilter/> */}
       {/* <List/> */}
-      <PropsInAdvance/>
+      {/* <PropsInAdvance/> */}
+      <ReactSideEffect/>
       
     </div>
   )}

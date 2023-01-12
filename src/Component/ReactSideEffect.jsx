@@ -8,13 +8,15 @@ const user = {
 // With out object destructuring
 
 
-function PropsInAdvance(props) {
+function ReactSideEffect(props) {
 
-    const [item, setitem] = useState('')
+    const [item, setitem] = useState( localStorage.getItem('search'))
 
     const handleclick = event => {
         console.log("Asign value" + item);
-        setitem(event.target.value)
+        setitem(event.target.value);
+        localStorage.setItem('search',event.target.value)
+       
     }
     const searchfilter = Post.filter((story) => {
         return (story.title.toLowerCase().includes(item.toLowerCase()));
@@ -35,11 +37,12 @@ const Search=({search,onSearch})=>{
     return(
         <div className="flex justify-center my-4">
         <div className="mb-3 xl:w-96">
-            <label htmlFor="" className="form-label inline-block mb-2 text-gray-700">Search:</label>
+            <label htmlFor="search" className="form-label inline-block mb-2 text-gray-700">Search:</label>
             <input
                 type="text"
                 className=" form-control block w-full px-3 py-1.5 text-base font-normal  text-gray-700  bg-white bg-clip-padding border border-solid border-gray-300  rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                 id={search}
+                value={search}
                 onChange={onSearch}
             />
         </div>
@@ -66,4 +69,4 @@ const Item=({item:{title,id,body,img}}) => (
     </div>
 )
 
-export default PropsInAdvance
+export default ReactSideEffect
