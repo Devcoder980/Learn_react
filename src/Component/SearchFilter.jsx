@@ -23,6 +23,7 @@ function SearchFilter() {
     )
 }
 const Search = props => {
+    
     return (
         <div>
             <label htmlFor="Search">Search: </label>
