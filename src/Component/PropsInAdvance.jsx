@@ -11,16 +11,17 @@ const user = {
 function PropsInAdvance(props) {
 
     const [item, setitem] = useState('')
+
     const handleclick = event => {
         console.log("Asign value" + item);
         setitem(event.target.value)
     }
     const searchfilter = Post.filter((story) => {
-        return (story.body.includes(item));
+        return (story.title.toLowerCase().includes(item.toLowerCase()));
     })
     return (
         <div >
-            <Search values={item} onsearchclick={handleclick} />
+            <Search search={item} onSearch={handleclick} />
             <div className='flex flex-wrap '>
             <Lists  list={searchfilter} />
             </div>
@@ -30,6 +31,7 @@ function PropsInAdvance(props) {
 }
 
 const Search=({search,onSearch})=>{
+    console.log(search);
     return(
         <div className="flex justify-center my-4">
         <div className="mb-3 xl:w-96">
