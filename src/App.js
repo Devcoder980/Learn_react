@@ -4,8 +4,9 @@ import Header from './Component/Header';
 // import AdvanceState from './Component/AdvanceState';
 // import AschoransState from './Component/AschoransState';
 // import CallbackHjsx from './Component/CallbackHjsx';
-import PropsInAdvance from './Component/PropsInAdvance';
+// import PropsInAdvance from './Component/PropsInAdvance';
 import ReactSideEffect from './Component/ReactSideEffect';
+// import CustHooks from './Component/CustHooks';
 // import SearchFilter from './Component/SearchFilter.jsx';
 // import Counter from './Component/Counter';
 // import Hero from './Component/Hero';
@@ -13,7 +14,7 @@ import ReactSideEffect from './Component/ReactSideEffect';
 // import Search from './Component/Search';
 // import StateManga from './Component/StateManga';
 // import WordClass from './Component/WordClass';
-
+import ReactCustomHooks from './Component/ReactCustomHooks';
 
 
 // const title='react';
@@ -22,9 +23,9 @@ import ReactSideEffect from './Component/ReactSideEffect';
 //   title:'React',
 // };
 
-function getTitle(title){
-  return title;
-}
+// function getTitle(title){
+//   return title;
+// }
 
 const App = () => {
   return (
@@ -54,8 +55,8 @@ const App = () => {
       // <SearchFilter/> */}
       {/* <List/> */}
       {/* <PropsInAdvance/> */}
-      <ReactSideEffect/>
-      
+      {/* <ReactSideEffect/> */}
+      <ReactCustomHooks/>
     </div>
   )}
 

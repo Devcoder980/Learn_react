@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import Post from '../source/Posts.json'
+import { useEffect } from 'react';
 
 const user = {
     firstName: 'Robin',
@@ -12,11 +13,12 @@ function ReactSideEffect(props) {
 
     const [item, setitem] = useState( localStorage.getItem('search'))
 
+    useEffect(() => {
+        localStorage.setItem('search',setitem);
+    }, [setitem])
+
     const handleclick = event => {
-        console.log("Asign value" + item);
         setitem(event.target.value);
-        localStorage.setItem('search',event.target.value)
-       
     }
     const searchfilter = Post.filter((story) => {
         return (story.title.toLowerCase().includes(item.toLowerCase()));
@@ -33,7 +35,6 @@ function ReactSideEffect(props) {
 }
 
 const Search=({search,onSearch})=>{
-    console.log(search);
     return(
         <div className="flex justify-center my-4">
         <div className="mb-3 xl:w-96">
@@ -41,7 +42,6 @@ const Search=({search,onSearch})=>{
             <input
                 type="text"
                 className=" form-control block w-full px-3 py-1.5 text-base font-normal  text-gray-700  bg-white bg-clip-padding border border-solid border-gray-300  rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                id={search}
                 value={search}
                 onChange={onSearch}
             />
