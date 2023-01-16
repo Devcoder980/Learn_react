@@ -15,6 +15,7 @@ import ReactSideEffect from './Component/ReactSideEffect';
 // import StateManga from './Component/StateManga';
 // import WordClass from './Component/WordClass';
 import ReactCustomHooks from './Component/ReactCustomHooks';
+import ReactFragments from './Component/ReactFragments';
 
 
 // const title='react';
@@ -56,7 +57,8 @@ const App = () => {
       {/* <List/> */}
       {/* <PropsInAdvance/> */}
       {/* <ReactSideEffect/> */}
-      <ReactCustomHooks/>
+      {/* <ReactCustomHooks/> */}
+      <ReactFragments/>
     </div>
   )}
 
