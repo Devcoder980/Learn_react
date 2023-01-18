@@ -16,6 +16,7 @@ import ReactSideEffect from './Component/ReactSideEffect';
 // import WordClass from './Component/WordClass';
 import ReactCustomHooks from './Component/ReactCustomHooks';
 import ReactFragments from './Component/ReactFragments';
+import Inlinehandler from './Component/Inlinehandler';
 
 
 // const title='react';
@@ -58,7 +59,8 @@ const App = () => {
       {/* <PropsInAdvance/> */}
       {/* <ReactSideEffect/> */}
       {/* <ReactCustomHooks/> */}
-      <ReactFragments/>
+      {/* <ReactFragments/> */}
+      <Inlinehandler/>
     </div>
   )}
 
