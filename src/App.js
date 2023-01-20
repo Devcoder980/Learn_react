@@ -5,7 +5,7 @@ import Header from './Component/Header';
 // import AschoransState from './Component/AschoransState';
 // import CallbackHjsx from './Component/CallbackHjsx';
 // import PropsInAdvance from './Component/PropsInAdvance';
-import ReactSideEffect from './Component/ReactSideEffect';
+// import ReactSideEffect from './Component/ReactSideEffect';
 // import CustHooks from './Component/CustHooks';
 // import SearchFilter from './Component/SearchFilter.jsx';
 // import Counter from './Component/Counter';
@@ -14,9 +14,10 @@ import ReactSideEffect from './Component/ReactSideEffect';
 // import Search from './Component/Search';
 // import StateManga from './Component/StateManga';
 // import WordClass from './Component/WordClass';
-import ReactCustomHooks from './Component/ReactCustomHooks';
-import ReactFragments from './Component/ReactFragments';
-import Inlinehandler from './Component/Inlinehandler';
+// import ReactCustomHooks from './Component/ReactCustomHooks';
+// import ReactFragments from './Component/ReactFragments';
+// import Inlinehandler from './Component/Inlinehandler';
+import { RevistionDay } from './Component/RevistionDay';
 
 
 // const title='react';
@@ -60,7 +61,8 @@ const App = () => {
       {/* <ReactSideEffect/> */}
       {/* <ReactCustomHooks/> */}
       {/* <ReactFragments/> */}
-      <Inlinehandler/>
+      {/* <Inlinehandler/> */}
+      <RevistionDay/>
     </div>
   )}
 
