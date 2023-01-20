@@ -1,39 +1,61 @@
+import { list } from 'postcss'
 import React from 'react'
-const title="Hello React";
 
+// const avenger=['Iron Man','captain American', 'Hulk','Thor','HawkEye'];
+const avenger=[
+    {
+        id:1,
+        name:'Iron Man'
+    },
+    {
+        id:2,
+        name:'capitain America'
+    },
+    {
+        id:3,
+        name:'Harsh'
+    },
+    {
+        id:4,
+        name:'Devendra'
+    },
+    {
+        id:5,
+        name:'Akhilesh'
+    }
 
-// let option;
-// if (isDarkMode) { option = 'Set Light Mode' }
-// else { option = 'Set Dark Mode' }
-// const toggleMode = <button>{ option }</button>
+];
+// let aven=avenger.map(ave=><li>{ave}</li>)
 
-const welcome={
-    gereeting:"hey",
-    title:'react',
-};
+const a=avenger.map((ave)=>{
+    console.log(ave.name)
+    return <li key={ave.id}>ave.name</li>
+})
+console.table(a)
+const avens=avenger.map(ave=>(<li key={ave.id}>{ave.name}</li>) )
 
-function getTitle(title){
-    return title;
-}
-
-// Using the && operator
+console.table(avens)
 
 export const RevistionDay = () => {
-    let sum=<p>{20+20}</p>;
   return (
     <div>
-        <h1 className="text-lg">{title}</h1>
-        
-        <p>{sum}</p>
-        <h1>{welcome.title} {welcome.gereeting}</h1>
-        <button className='border-2 px-4 py-4'>{getTitle("dev")}</button>
-        {/* <p>{isTrue && "This is also true"}</p> */}
-        <button ></button>
+        <h1 className="text-center">My Avenger LIst</h1>
+        {/* <ul className="bg-blue-500 text-white text-3xl">
+            {avenger.map(avenger=><li>{avenger}</li>)}
+        </ul>
+        <ul>
+            {aven}
+        </ul> */}
 
+        <ul>
+            {avens}
+        </ul>
+
+        <p>
+            {avenger.map(function(item){
+                return <div>{item.name}</div>
+            })}
+        </p>
     </div>
   )
 }
-// let isDarkMode='';
-
-
-   
