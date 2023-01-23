@@ -17,7 +17,7 @@ import Header from './Component/Header';
 // import ReactCustomHooks from './Component/ReactCustomHooks';
 // import ReactFragments from './Component/ReactFragments';
 // import Inlinehandler from './Component/Inlinehandler';
-import { RevistionDay } from './Component/RevistionDay';
+import RevistionDay from './Component/RevistionDay';
 
 
 // const title='react';

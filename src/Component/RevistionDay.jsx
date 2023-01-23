@@ -1,21 +1,30 @@
-//Some Practive React class base component
-
-import React from 'react'
-
-class Developer{
-    constructor(firstname,lastname){
-        this.firstname=firstname;
-        this.lastname=lastname;
-    }
-    getName(){
-        return this.firstname + "  "+ this.lastname;
-    }
+import React,{useState} from 'react'
+import { useEffect } from 'react'
+function dates(){
+    
+    return(new Date().toLocaleTimeString())
 }
 
-const dev=new Developer("Dev",'Coder');
-console.table(dev.getName())
-export const RevistionDay = () => {
+
+// console.log(dates.Date())
+function RevistionDay() {
+
+    const [first, setfirst] = useState('')
+    useEffect(() => {
+        setInterval(() => {
+            setfirst(dates())
+        }, 1000);
+    
+})
   return (
-    <div>{dev.getName()}</div>
+    <div>
+        <h1>Hello World</h1>
+        {/* <h2>It is {new Date().toLocaleTimeString()}</h2> */}
+        <p className="text-center bg-green-500 text-3xl">{first}</p>
+        
+    </div>
   )
 }
+// setInterval(RevistionDay(),1000);
+
+export default RevistionDay
