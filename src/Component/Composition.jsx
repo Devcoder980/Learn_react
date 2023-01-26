@@ -13,6 +13,7 @@ const useSemiPersistentState = (key, initialState) => {
 };
 
 const App = () => {
+    
   const stories = [
     {
       title: 'React',
@@ -53,11 +54,13 @@ const App = () => {
         id="search"
         value={searchTerm}
         onInputChange={handleSearch}
+        isFocused
+
       >
         <strong>Search:</strong>
       </InputWithLabel>
+    
      
-
       <hr />
 
       <List list={searchedStories} />
@@ -70,19 +73,34 @@ const InputWithLabel = ({
   value,
   type = 'text',
   onInputChange,
+  isFocused,
   children,
-}) => (
+}) => {
+   
+
+    const inputRef =React.useRef();
+    // C
+    React.useEffect(() => {
+    if (isFocused && inputRef.current) {
+    // D
+    inputRef.current.focus();
+    }
+    }, [isFocused]);
+    
+return(
   <>
     <label htmlFor={id}>{children}</label>
     &nbsp;
     <input className='border-2'
+      ref={inputRef}
       id={id}
       type={type}
       value={value}
+      
       onChange={onInputChange}
     />
   </>
-);
+);}
 
 const List = ({ list }) =>
   list.map(item => <Item key={item.objectID} item={item} />);
