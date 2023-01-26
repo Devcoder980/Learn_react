@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import Composition from './Component/Composition';
 import Header from './Component/Header';
 // import AdvanceState from './Component/AdvanceState';
 // import AschoransState from './Component/AschoransState';
@@ -17,7 +18,7 @@ import Header from './Component/Header';
 // import ReactCustomHooks from './Component/ReactCustomHooks';
 // import ReactFragments from './Component/ReactFragments';
 // import Inlinehandler from './Component/Inlinehandler';
-import RevistionDay from './Component/RevistionDay';
+// import RevistionDay from './Component/RevistionDay';
 
 
 // const title='react';
@@ -62,7 +63,8 @@ const App = () => {
       {/* <ReactCustomHooks/> */}
       {/* <ReactFragments/> */}
       {/* <Inlinehandler/> */}
-      <RevistionDay/>
+      {/* <RevistionDay/> */}
+      <Composition/>
     </div>
   )}
 
