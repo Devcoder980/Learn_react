@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 // import Composition from './Component/Composition';
 import Header from './Component/Header';
+import TocTacToe from './Component/TocTacToe'
 // import Dataremive from './Component/Dataremive';
 import Forms from './Component/Forms';
 // import AdvanceState from './Component/AdvanceState';
@@ -68,7 +69,8 @@ const App = () => {
       {/* <RevistionDay/> */}
       {/* <Composition/> */}
       {/* <Dataremive username="Prabhu"/> */}
-      <Forms/>
+      {/* <Forms/> */}
+      <TocTacToe/>
     </div>
   )}
 
