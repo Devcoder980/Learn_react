@@ -1,177 +1,45 @@
-import React from 'react';
+import React from 'react'
 
-const initialStories = [
-  {
-    title: 'React',
-    url: 'https://reactjs.org/',
-    author: 'Jordan Walke',
-    num_comments: 3,
-    points: 4,
-    objectID: 0,
-  },
-  {
-    title: 'Redux',
-    url: 'https://redux.js.org/',
-    author: 'Dan Abramov, Andrew Clark',
-    num_comments: 2,
-    points: 5,
-    objectID: 1,
-  },
-];
+function Dataremive() {
+  
+  const [login, setlogin] = React.useState(false);
 
-const getAsyncStories = () =>
-  new Promise(resolve =>
-    setTimeout(
-      () => resolve({ data: { stories: initialStories } }),
-      2000
-    )
-  );
 
-const useSemiPersistentState = (key, initialState) => {
-  const [value, setValue] = React.useState(
-    localStorage.getItem(key) || initialState
-  );
-
-  React.useEffect(() => {
-    localStorage.setItem(key, value);
-  }, [value, key]);
-
-  return [value, setValue];
-};
-
-const Dataremive = () => {
-  const [searchTerm, setSearchTerm] = useSemiPersistentState(
-    'search',
-    'React'
-  );
-
-  // const [stories, setStories] = React.useState([]);
-  const [isLoading,setIsLoading]=React.useState(false);
-  const [isError,setIsError]=React.useState(false);
-
-  const storiesReducer = (state, action) => {
-    if (action.type === 'SET_STORIES') {
-    return action.payload;
-    } else {
-    throw new Error();
+ 
+  
+  const checkLogin=(e)=>{
+    if(e.target.value.length>8)
+    {
+      setlogin(true);
     }
-    };
-    
-  const [stories,dispatchStories]=React.useReducer(
-    storiesReducer,
-  []
-  );
-
-  React.useEffect(() => {
-    setIsLoading(true);
-    getAsyncStories().then(result => {
-      dispatchStories({
-        type:'SET_STORIES',
-        payload:result.data.stories,
-      });
-      
-      setIsLoading(false);
-    })
-    .catch(()=>setIsError(true));
-   
-  }, []);
-
-  const handleRemoveStory = item => {
-    const newStories = stories.filter(
-      story => item.objectID !== story.objectID
-    );
-
-    dispatchStories({
-      type:'SET_STORIES',
-      payload:newStories,
-    });
-  };
-
-  const handleSearch = event => {
-    setSearchTerm(event.target.value);
-  };
-
-  const searchedStories = stories.filter(story =>
-    story.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
+  }
+  let a=false;
   return (
     <div>
-      <h1>My Hacker Stories</h1>
-
-      <InputWithLabel
-        id="search"
-        value={searchTerm}
-        isFocused
-        onInputChange={handleSearch}
-      >
-        <strong>Search:</strong>
-      </InputWithLabel>
-
-      <hr />
-      {isError && <p>Something went wrong ...</p>}
-      {isLoading ? (<p>Loading...</p>):(
-          <List list={searchedStories} onRemoveItem={handleRemoveStory} />
-      )}
-      
+      <div>
+        <label htmlFor="name">UserNames</label>
+        <input onFocus={true} type="text" className='border-2 ' />
+        <label htmlFor="password">Password</label>
+        <input type="password"  onChange={checkLogin} className='border-2' />
+        <button  className='border-2' onClick={a=login}>Log in</button>
+      </div>
+      <Greeitng isLoggidIn={a}/>
     </div>
-  );
-};
+  )
+}
 
-const InputWithLabel = ({
-  id,
-  value,
-  type = 'text',
-  onInputChange,
-  isFocused,
-  children,
-}) => {
-  const inputRef = React.useRef();
-
-  React.useEffect(() => {
-    if (isFocused) {
-      inputRef.current.focus();
-    }
-  }, [isFocused]);
-
-  return (
-    <>
-      <label htmlFor={id}>{children}</label>
-      &nbsp;
-      <input
-        ref={inputRef}
-        id={id}
-        type={type}
-        value={value}
-        onChange={onInputChange}
-      />
-    </>
-  );
-};
-
-const List = ({ list, onRemoveItem }) =>
-  list.map(item => (
-    <Item
-      key={item.objectID}
-      item={item}
-      onRemoveItem={onRemoveItem}
-    />
-  ));
-
-const Item = ({ item, onRemoveItem }) => (
-  <div>
-    <span>
-      <a href={item.url}>{item.title}</a>
-    </span>
-    <span>{item.author}</span>
-    <span>{item.num_comments}</span>
-    <span>{item.points}</span>
-    <span>
-      <button type="button" onClick={() => onRemoveItem(item)}>
-        Dismiss
-      </button>
-    </span>
-  </div>
-);
-
-export default Dataremive;
+function UserGreeting(props){
+  return <h2>Welcome back!</h2>;
+}
+function GuestGreeting(props) {
+  return <h1>Please sign up.</h1>;
+}
+function Greeitng(props) {
+  const isLoggidIn=props.isLoggidIn;
+  if(isLoggidIn){
+    return<UserGreeting/>
+    
+  }
+  return <GuestGreeting/>
+}
+export default Dataremive
