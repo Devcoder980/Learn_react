@@ -1,33 +1,47 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Dataremive() {
-  
-  const [login, setlogin] = React.useState(false);
-
-
- 
-  
-  const checkLogin=(e)=>{
-    if(e.target.value.length>8)
-    {
-      setlogin(true);
-    }
+export default class Dataremive extends Component {
+  constructor(props){
+    super(props);
+    this.handleLoginClick=this.handleLoginClick.bind(this);
+    this.handlelogoutClick=this.handlelogoutClick.bind(this);
+    this.state={isLoggidIn:false};
   }
-  let a=false;
-  return (
-    <div>
+  handleLoginClick(){
+    this.setState({isLoggidIn:true});
+  }
+  handlelogoutClick(){
+    this.setState({isLoggidIn:false})
+  }
+  render() {
+    const isLoggedIn=this.state.isLoggidIn;
+    let button;
+    if(isLoggedIn){
+      button=<LogoutButton onClick={this.handlelogoutClick}/>
+    }
+    else{
+      button=<LoginButton onClick={this.handleLoginClick}/>
+    }
+
+    return (
       <div>
-        <label htmlFor="name">UserNames</label>
-        <input onFocus={true} type="text" className='border-2 ' />
-        <label htmlFor="password">Password</label>
-        <input type="password"  onChange={checkLogin} className='border-2' />
-        <button  className='border-2' onClick={a=login}>Log in</button>
+          <Greeitng isLoggidIn={isLoggedIn}/>
+          {button}
       </div>
-      <Greeitng isLoggidIn={a}/>
-    </div>
-  )
+    )
+  }
 }
 
+function LoginButton(props){
+  return(
+    <button onClick={props.onClick} >Login</button>
+  );
+}
+function LogoutButton(props){
+  return(
+    <button onClick={props.onClick}>Logout</button>
+  )
+}
 function UserGreeting(props){
   return <h2>Welcome back!</h2>;
 }
@@ -42,4 +56,3 @@ function Greeitng(props) {
   }
   return <GuestGreeting/>
 }
-export default Dataremive
