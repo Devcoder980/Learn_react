@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Composition from './Component/Composition';
 import Header from './Component/Header';
+import Dataremive from './Component/Dataremive';
 // import AdvanceState from './Component/AdvanceState';
 // import AschoransState from './Component/AschoransState';
 // import CallbackHjsx from './Component/CallbackHjsx';
@@ -64,7 +65,8 @@ const App = () => {
       {/* <ReactFragments/> */}
       {/* <Inlinehandler/> */}
       {/* <RevistionDay/> */}
-      <Composition/>
+      {/* <Composition/> */}
+      <Dataremive username="Prabhu"/>
     </div>
   )}
 
