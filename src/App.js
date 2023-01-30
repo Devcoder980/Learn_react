@@ -1,8 +1,9 @@
 import React from 'react'
 import './App.css'
-import Composition from './Component/Composition';
+// import Composition from './Component/Composition';
 import Header from './Component/Header';
-import Dataremive from './Component/Dataremive';
+// import Dataremive from './Component/Dataremive';
+import Forms from './Component/Forms';
 // import AdvanceState from './Component/AdvanceState';
 // import AschoransState from './Component/AschoransState';
 // import CallbackHjsx from './Component/CallbackHjsx';
@@ -66,7 +67,8 @@ const App = () => {
       {/* <Inlinehandler/> */}
       {/* <RevistionDay/> */}
       {/* <Composition/> */}
-      <Dataremive username="Prabhu"/>
+      {/* <Dataremive username="Prabhu"/> */}
+      <Forms/>
     </div>
   )}
 
