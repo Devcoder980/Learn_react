@@ -45,16 +45,31 @@ const Dataremive = () => {
     'React'
   );
 
-  const [stories, setStories] = React.useState([]);
+  // const [stories, setStories] = React.useState([]);
   const [isLoading,setIsLoading]=React.useState(false);
   const [isError,setIsError]=React.useState(false);
 
-
+  const storiesReducer = (state, action) => {
+    if (action.type === 'SET_STORIES') {
+    return action.payload;
+    } else {
+    throw new Error();
+    }
+    };
+    
+  const [stories,dispatchStories]=React.useReducer(
+    storiesReducer,
+  []
+  );
 
   React.useEffect(() => {
     setIsLoading(true);
     getAsyncStories().then(result => {
-      setStories(result.data.stories);
+      dispatchStories({
+        type:'SET_STORIES',
+        payload:result.data.stories,
+      });
+      
       setIsLoading(false);
     })
     .catch(()=>setIsError(true));
@@ -66,7 +81,10 @@ const Dataremive = () => {
       story => item.objectID !== story.objectID
     );
 
-    setStories(newStories);
+    dispatchStories({
+      type:'SET_STORIES',
+      payload:newStories,
+    });
   };
 
   const handleSearch = event => {
