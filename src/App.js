@@ -2,9 +2,11 @@ import React from 'react'
 import './App.css'
 // import Composition from './Component/Composition';
 import Header from './Component/Header';
-import TocTacToe from './Component/TocTacToe'
+// import TocTacToe from './Component/TocTacToe'
 // import Dataremive from './Component/Dataremive';
-import Forms from './Component/Forms';
+// import Forms from './Component/Forms';
+// import LastDay from './Component/LastDay';
+import Data_fetch from './Component/Data_fetch';
 // import AdvanceState from './Component/AdvanceState';
 // import AschoransState from './Component/AschoransState';
 // import CallbackHjsx from './Component/CallbackHjsx';
@@ -70,7 +72,10 @@ const App = () => {
       {/* <Composition/> */}
       {/* <Dataremive username="Prabhu"/> */}
       {/* <Forms/> */}
-      <TocTacToe/>
+      {/* <TocTacToe/> */}
+      {/* <LastDay/> */}
+      
+      <Data_fetch/>
     </div>
   )}
 
