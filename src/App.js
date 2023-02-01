@@ -6,7 +6,7 @@ import Header from './Component/Header';
 // import Dataremive from './Component/Dataremive';
 // import Forms from './Component/Forms';
 // import LastDay from './Component/LastDay';
-import Data_fetch from './Component/Data_fetch';
+// import Data_fetch from './Component/Data_fetch';
 // import AdvanceState from './Component/AdvanceState';
 // import AschoransState from './Component/AschoransState';
 // import CallbackHjsx from './Component/CallbackHjsx';
@@ -24,7 +24,7 @@ import Data_fetch from './Component/Data_fetch';
 // import ReactFragments from './Component/ReactFragments';
 // import Inlinehandler from './Component/Inlinehandler';
 // import RevistionDay from './Component/RevistionDay';
-
+import UseCall from './Hooks/UseCall';
 
 // const title='react';
 // const welcome={
@@ -74,8 +74,9 @@ const App = () => {
       {/* <Forms/> */}
       {/* <TocTacToe/> */}
       {/* <LastDay/> */}
-      
-      <Data_fetch/>
+  
+      {/* <Data_fetch/> */}
+      <UseCall/>
     </div>
   )}
 
