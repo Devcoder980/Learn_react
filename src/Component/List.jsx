@@ -24,7 +24,7 @@ function List() {
     <div className="my-4 text-start" >
         <div className="fill-black bg-yellow-700 ">Hello buddys</div>
         <Todo todolist={post}/>
-        <Lists todolist={post}/>
+        {/* <Lists todolist={post}/> */}
     </div>
   )
 }

@@ -1,15 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.fortnite-btn {
-    background: linear-gradient(#7277fe, #a3a9fe);
-    font-family: cursive;
-}
-
-.fortnite-btn-inner:hover {
-    box-shadow: 0px 4px 17px 13px #7986cb;
-}
-button{
-    
-}
