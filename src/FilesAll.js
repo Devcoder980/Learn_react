@@ -1,3 +1,4 @@
+
 import Header from './Component/Header';
 import InputForm from './Hooks/InputForm';
 import Forms from './Component/Forms';
@@ -21,7 +22,8 @@ import ReactCustomHooks from './Component/ReactCustomHooks';
 import ReactFragments from './Component/ReactFragments';
 import Inlinehandler from './Component/Inlinehandler';
 import RevistionDay from './Component/RevistionDay';
-
+import Memos from './Component/Memos';
+import ReactStyling from './Component/ReactStyling';
 const a = [
 
     { name: Header },
@@ -47,7 +49,9 @@ const a = [
     { name: ReactCustomHooks },
     { name: ReactFragments },
     { name: Inlinehandler },
-    { name: RevistionDay }
+    { name: RevistionDay },
+    {name:Memos},
+    {name:ReactStyling}
 
 ]
 export default a

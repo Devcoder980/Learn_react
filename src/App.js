@@ -4,7 +4,6 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import A from './FilesAll';
 import Head from './Head';
-import Hero from './Component/Hero';
 console.table(A);
 const App = () => {
   return (
