@@ -24,6 +24,9 @@ import Inlinehandler from './Component/Inlinehandler';
 import RevistionDay from './Component/RevistionDay';
 import Memos from './Component/Memos';
 import ReactStyling from './Component/ReactStyling';
+import UseState from './Hooks/UseState';
+import UseEffect from './Hooks/UseEffect';
+import UseContext from './Hooks/UseContext';
 const a = [
 
     { name: Header },
@@ -51,7 +54,10 @@ const a = [
     { name: Inlinehandler },
     { name: RevistionDay },
     {name:Memos},
-    {name:ReactStyling}
+    {name:ReactStyling},
+    {name:UseState},
+    {name:UseEffect},
+    {name:UseContext}
 
 ]
 export default a
