@@ -1,6 +1,5 @@
 import Header from './Component/Header';
 import InputForm from './Hooks/InputForm';
-// import Dataremive from './Component/Dataremive';
 import Forms from './Component/Forms';
 import TocTacToe from './Component/TocTacToe';
 import LastDay from './Component/LastDay';
@@ -52,7 +51,3 @@ const a = [
 
 ]
 export default a
-
-// export { Header, InputForm, Dataremive, Forms, TocTacToe, LastDay, Data_fetch, AdvanceState, AschoransState, CallbackHjsx, PropsInAdvance, ReactSideEffect, Head, SearchFilter, Counter, Hero, List, Search, StateManga, WordClass, ReactCustomHooks, ReactFragments, Inlinehandler, RevistionDay,
-
-// };

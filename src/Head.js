@@ -9,7 +9,6 @@ const Head = () => {
                     <li className="flex-1 border-2 cursor-pointer p-2 bg-blue-900 text-white" key={index}><Link to={`/` + e.name.name}>{e.name.name}</Link></li>
                 ))}
             </nav>
-
             <Outlet />
         </>
     )
