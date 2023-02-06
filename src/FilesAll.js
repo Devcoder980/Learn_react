@@ -27,6 +27,8 @@ import ReactStyling from './Component/ReactStyling';
 import UseState from './Hooks/UseState';
 import UseEffect from './Hooks/UseEffect';
 import UseContext from './Hooks/UseContext';
+import UseRef from './Hooks/UseRef'
+import UserReducer from './Hooks/UserReducer';
 const a = [
 
     { name: Header },
@@ -57,7 +59,9 @@ const a = [
     {name:ReactStyling},
     {name:UseState},
     {name:UseEffect},
-    {name:UseContext}
+    {name:UseContext},
+    {name:UseRef},
+    {name:UserReducer}
 
 ]
 export default a
