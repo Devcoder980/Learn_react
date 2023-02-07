@@ -1,54 +1,36 @@
-import {useReducer} from 'react'
+import { useReducer } from "react";
 
-const initialTodos=[
-    {
-        id:1,
-        title:"Todo 1",
-        complete:true,
-    },
-    {
-        id:2,
-        title:"Todo 2",
-        complete:false,
-    },
-];
+const reducer=(state,action)=>{
+  switch(action.type){
+    case "INCREMENT":
+      return {count:state.count+2,showText:state.showText};
+    case "toggleShowText":
+      return{count:state.count,showText:!state.showText};
+    default:
+      return state;
+  }
+};
 
-const reducer = (state, action) => {
-    switch (action.type) {
-      case "COMPLETE":
-        return state.map((todo) => {
-          if (todo.id === action.id) {
-            return { ...todo, complete: !todo.complete };
-          } else {
-            return todo;
-          }
-        });
-      default:
-        return state;
-    }
-  };
+const defaultState={
+  count:0,
+  showText:true,
+};
+
+const UserReducer=()=>{
+  const [state,dispatch]=useReducer(reducer,defaultState);
 
 
-const UserReducer = () => {
-    const [todos,dispatch] = useReducer(reducer,initialTodos);
-
-    const handleComplete = (todo) => {
-        dispatch({type:"COMPLETE",id:todo.id});
-    };
-  return (
-    <div>
-        {todos.map((todo)=>(
-            <div key={todo.id}>
-                <label>
-                    <input type="checkbox"
-                    checked={todo.complete}
-                    onChange={()=>handleComplete(todo)} />
-                    {todo.title}
-                </label>
-            </div>
-        ))}
-    </div>
+  return(
+    <>
+    <h1>Welcome</h1>
+    <button
+    onClick={()=>{
+      dispatch({type:"INCREMENT"});
+      dispatch({type:"toggleShowText"});
+    }}
+    >Click here</button>
+    {state.showText && <h2>This is a text</h2>}
+    </>
   )
 }
-
 export default UserReducer

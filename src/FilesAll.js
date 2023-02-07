@@ -29,6 +29,7 @@ import UseEffect from './Hooks/UseEffect';
 import UseContext from './Hooks/UseContext';
 import UseRef from './Hooks/UseRef'
 import UserReducer from './Hooks/UserReducer';
+import UseCallback from './Hooks/UseCallback';
 const a = [
 
     { name: Header },
@@ -61,7 +62,8 @@ const a = [
     {name:UseEffect},
     {name:UseContext},
     {name:UseRef},
-    {name:UserReducer}
+    {name:UserReducer},
+    {name:UseCallback}
 
 ]
 export default a
