@@ -30,6 +30,7 @@ import UseContext from './Hooks/UseContext';
 import UseRef from './Hooks/UseRef'
 import UserReducer from './Hooks/UserReducer';
 import UseCallback from './Hooks/UseCallback';
+import GsapHorizontalcss from './Component/GsapHorizontalcss'
 const a = [
 
     { name: Header },
@@ -63,7 +64,8 @@ const a = [
     {name:UseContext},
     {name:UseRef},
     {name:UserReducer},
-    {name:UseCallback}
+    {name:UseCallback},
+    {name:GsapHorizontalcss}
 
 ]
 export default a
