@@ -70,3 +70,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+## [![Repography logo](https://images.repography.com/logo.svg)](https://repography.com) / Recent activity [![Time period](https://images.repography.com/35391772/Devcoder980/Learn_react/recent-activity/YIVC_F9xLDmUpV6lAO4O52cxRdh-Neb49G-oYcTB9uU/Izlp6_9Qi35t1RuLAkhqy0b2CnyvY2OYABUYB3YknWA_badge.svg)](https://repography.com)
+[![Timeline graph](https://images.repography.com/35391772/Devcoder980/Learn_react/recent-activity/YIVC_F9xLDmUpV6lAO4O52cxRdh-Neb49G-oYcTB9uU/Izlp6_9Qi35t1RuLAkhqy0b2CnyvY2OYABUYB3YknWA_timeline.svg)](https://github.com/Devcoder980/Learn_react/commits)
+[![Issue status graph](https://images.repography.com/35391772/Devcoder980/Learn_react/recent-activity/YIVC_F9xLDmUpV6lAO4O52cxRdh-Neb49G-oYcTB9uU/Izlp6_9Qi35t1RuLAkhqy0b2CnyvY2OYABUYB3YknWA_issues.svg)](https://github.com/Devcoder980/Learn_react/issues)
+[![Pull request status graph](https://images.repography.com/35391772/Devcoder980/Learn_react/recent-activity/YIVC_F9xLDmUpV6lAO4O52cxRdh-Neb49G-oYcTB9uU/Izlp6_9Qi35t1RuLAkhqy0b2CnyvY2OYABUYB3YknWA_prs.svg)](https://github.com/Devcoder980/Learn_react/pulls)
+[![Trending topics](https://images.repography.com/35391772/Devcoder980/Learn_react/recent-activity/YIVC_F9xLDmUpV6lAO4O52cxRdh-Neb49G-oYcTB9uU/Izlp6_9Qi35t1RuLAkhqy0b2CnyvY2OYABUYB3YknWA_words.svg)](https://github.com/Devcoder980/Learn_react/commits)
+[![Top contributors](https://images.repography.com/35391772/Devcoder980/Learn_react/recent-activity/YIVC_F9xLDmUpV6lAO4O52cxRdh-Neb49G-oYcTB9uU/Izlp6_9Qi35t1RuLAkhqy0b2CnyvY2OYABUYB3YknWA_users.svg)](https://github.com/Devcoder980/Learn_react/graphs/contributors)
+[![Activity map](https://images.repography.com/35391772/Devcoder980/Learn_react/recent-activity/YIVC_F9xLDmUpV6lAO4O52cxRdh-Neb49G-oYcTB9uU/Izlp6_9Qi35t1RuLAkhqy0b2CnyvY2OYABUYB3YknWA_map.svg)](https://github.com/Devcoder980/Learn_react/commits)
+
+
